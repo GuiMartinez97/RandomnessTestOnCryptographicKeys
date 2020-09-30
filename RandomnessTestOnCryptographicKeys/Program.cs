@@ -26,6 +26,9 @@ namespace RandomnessTestOnCryptographicKeys
 
             using (var sw = new StreamWriter("Result.txt"))
             {
+                sw.WriteLine($"https://github.com/GuiMartinez97/RandomnessTestOnCryptographicKeys");
+                sw.WriteLine("");
+
                 foreach (string key in keys)
                 {
                     string keyInBinaryFormat = StringToBinary(key);
